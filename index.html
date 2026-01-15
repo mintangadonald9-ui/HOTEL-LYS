@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hôtel LYS | Élégance & Confort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hôtel LYS – Élégance, confort et hospitalité. Réservez votre séjour dès maintenant.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+            url('https://images.unsplash.com/photo-1501117716987-c8e1ecb210a9') center/cover;
+            height: 90vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .btn {
+            background: #c8a951;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #c8a951;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hôtel LYS</h1>
+    <p>Élégance • Confort • Hospitalité</p>
+    <a href="#reservation" class="btn">Réserver maintenant</a>
+</header>
+
+<section>
+    <h2>À propos de nous</h2>
+    <p style="text-align:center">
+        L’Hôtel LYS vous accueille dans un cadre raffiné et paisible.
+        Nous offrons un service haut de gamme adapté aux voyageurs d’affaires
+        et de loisirs.
+    </p>
+</section>
+
+<section>
+    <h2>Nos Chambres</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Chambre Standard</h3>
+            <p>Confortable et moderne – Wi-Fi, Climatisation, TV</p>
+            <strong>À partir de 25 000 FCFA</strong>
+        </div>
+        <div class="card">
+            <h3>Chambre Luxe</h3>
+            <p>Plus d’espace, minibar, vue agréable</p>
+            <strong>À partir de 40 000 FCFA</strong>
+        </div>
+        <div class="card">
+            <h3>Suite</h3>
+            <p>Salon privé, luxe absolu, service premium</p>
+            <strong>À partir de 60 000 FCFA</strong>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Nos Services</h2>
+    <div class="grid">
+        <div class="card">Restaurant & Bar</div>
+        <div class="card">Wi-Fi gratuit</div>
+        <div class="card">Parking sécurisé</div>
+        <div class="card">Salle de conférence</div>
+        <div class="card">Room Service</div>
+        <div class="card">Navette aéroport</div>
+    </div>
+</section>
+
+<section id="reservation">
+    <h2>Réservation</h2>
+    <form>
+        <input type="text" placeholder="Nom complet" required>
+        <input type="email" placeholder="Email" required>
+        <input type="date" required>
+        <input type="date" required>
+        <textarea placeholder="Message / demande spéciale"></textarea>
+        <button>Envoyer la demande</button>
+    </form>
+</section>
+
+<footer>
+    <p>📍 Hôtel LYS – Cameroun</p>
+    <p>📞 +237 6XX XXX XXX | ✉ contact@hotellys.com</p>
+    <p>© 2026 Hôtel LYS – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
